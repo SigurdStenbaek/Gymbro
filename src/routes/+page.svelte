@@ -2,7 +2,7 @@
   import App from '$lib/components/App.svelte'
 </script>
 
-<div>
+<div class="viewport">
   <App />
 </div>
 
@@ -10,5 +10,8 @@
   :global(body) {
     margin: 0;
     background: #eeeeee;
+  }
+  :global(canvas) {
+    height: 200%;
   }
 </style>

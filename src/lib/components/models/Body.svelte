@@ -3,7 +3,8 @@
   import { Mesh } from "three";
   import Part from "./Part.svelte";
   
-  let manPromise = useGltf('/models/MaleComposition.glb');
+  // let manPromise = useGltf('/models/MaleComposition.glb');
+  let manPromise = useGltf('/models/Male.glb');
 
   interactivity();
 

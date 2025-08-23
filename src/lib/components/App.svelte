@@ -3,15 +3,31 @@
   import Scene from './Scene.svelte'
   import Selection from './Selection.svelte';
 </script>
-<div class="scene">
-  <Canvas>
-    <Scene />
-  </Canvas>
+<div class="scene-grid">
+  <div class="scene-container">
+    <Canvas>
+      <Scene />
+    </Canvas>
+  </div>
 </div>
 <Selection/>
 
 <style>
-  .scene {
-    height: 500px;
+  .scene-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    /* height: 800px; */
+  }
+
+  .scene-container {
+    display: grid;
+    align-content: center;
+  }
+  
+  @media (max-width: 600px) {  /* Dimensjoner for mobil-skjerm */
+    .scene-grid {
+      /* height: 600px; */
+    }
   }
 </style>
