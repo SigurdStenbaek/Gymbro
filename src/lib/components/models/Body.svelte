@@ -4,7 +4,7 @@
   import Part from "./Part.svelte";
   
   // let manPromise = useGltf('/models/MaleComposition.glb');
-  let manPromise = useGltf('/models/Male.glb');
+  let manPromise = useGltf('/models/BETAMale.glb');
 
   interactivity();
 

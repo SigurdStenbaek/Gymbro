@@ -7,6 +7,10 @@
 </div>
 
 <style>
+  .viewport {
+    height: 100%;
+  }
+
   :global(body) {
     margin: 0;
     background: #eeeeee;
