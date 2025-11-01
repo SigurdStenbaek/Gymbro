@@ -6,8 +6,11 @@
     export let mesh: Mesh;
     export let normalMap: CanvasTexture ;
     
-    let color: string = "#bbbbbb";
-    const selectionColor: string = "#aa6666";
+    const bodyColor: string = "#ffc0b3";
+    const selectionColor: string = "#fe7358";
+    const hoverColor: string = "#fff2eb";
+    
+    let color: string = bodyColor;
     let isSelected: boolean = false;
 
     function pointerup(e: any) {
@@ -27,12 +30,13 @@
     }
     
     function pointerEnter(e:any) {
-        color = "#ffffff";
+        color = hoverColor;
         e.stopPropagation();
     }
 
     function pointerLeave(e:any) {
-        color = "#bbbbbb";
+        color = bodyColor;
+        e.stopPropagation();
     }
 </script>
 
