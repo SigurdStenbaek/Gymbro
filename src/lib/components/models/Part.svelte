@@ -11,18 +11,15 @@
     const hoverColor: string = "#fff2eb";
     
     let color: string = bodyColor;
-    let isSelected: boolean = false;
 
     function pointerup(e: any) {
         if (e.nativeEvent.button == 0) {
-            isSelected = !isSelected;
-            if (isSelected) {
-                $selectionStore = [...$selectionStore, e.object.name]
+            if ($selectionStore == e.object.name)
+            {
+                $selectionStore = null;
             }
             else {
-                let index = $selectionStore.findIndex(x => x == e.object.name);
-                $selectionStore.splice(index, 1);
-                $selectionStore = $selectionStore;
+                $selectionStore = e.object.name;
             }
         }
 
@@ -45,6 +42,6 @@
     on:pointerleave={pointerLeave}
     on:pointerup={pointerup}>
     
-    <T.MeshStandardMaterial {normalMap} color={isSelected ? selectionColor : color}/>
+    <T.MeshStandardMaterial {normalMap} color={$selectionStore == mesh.name ? selectionColor : color}/>
   </T.Mesh>    
 
