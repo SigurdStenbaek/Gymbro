@@ -6,7 +6,7 @@
     export let mesh: Mesh;
     export let normalMap: CanvasTexture ;
     
-    let color: string = "#cccccc";
+    let color: string = "#bbbbbb";
     const selectionColor: string = "#aa6666";
     let isSelected: boolean = false;
 
