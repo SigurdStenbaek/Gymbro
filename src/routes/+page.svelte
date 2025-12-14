@@ -1,21 +1,15 @@
 <script lang="ts">
-  import App from '$lib/components/App.svelte'
+  import App from '$lib/components/App.svelte';
+  import {Heading, Footer} from "flowbite-svelte";
 </script>
 
-<div class="viewport">
+<div class="col-span-12">
+  <Heading tag="h1" class="bg-white p-4" style="height:75px">Gymbro</Heading>
   <App />
+  <Footer class="p-4" style="height:50px">
+    2025 Gymbro All Rights Reserved
+  </Footer>
 </div>
 
 <style>
-  .viewport {
-    height: 100%;
-  }
-
-  :global(body) {
-    margin: 0;
-    background: #eeeeee;
-  }
-  :global(canvas) {
-    height: 200%;
-  }
 </style>
