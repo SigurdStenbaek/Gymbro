@@ -38,9 +38,9 @@
 </script>
 
   <T.Mesh geometry={mesh.geometry} name={mesh.name}
-    on:pointerenter={pointerEnter}
-    on:pointerleave={pointerLeave}
-    on:pointerup={pointerup}>
+    onpointerenter={pointerEnter}
+    onpointerleave={pointerLeave}
+    onpointerup={pointerup}>
     
     <T.MeshStandardMaterial {normalMap} color={$selectionStore == mesh.name ? selectionColor : color}/>
   </T.Mesh>    
