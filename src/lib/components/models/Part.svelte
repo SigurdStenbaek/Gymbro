@@ -38,6 +38,7 @@
 </script>
 
   <T.Mesh geometry={mesh.geometry} name={mesh.name}
+    renderOrder={1}
     onpointerenter={pointerEnter}
     onpointerleave={pointerLeave}
     onpointerup={pointerup}>

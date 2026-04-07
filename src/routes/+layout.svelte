@@ -1,5 +1,6 @@
 <script lang="ts">
-  import "../app.css";     
+  import "../app.css";    
+  import { Heading, Footer } from "flowbite-svelte"; 
 
   let { children } = $props();
 </script>
@@ -9,5 +10,9 @@
 </svelte:head>
 
 <main>
-	{@render children()}
+  <Heading tag="h1" class="bg-white p-4" style="height:75px">GymRat®</Heading>
+    {@render children()}
+  <Footer class="p-4" style="height:50px">
+    2026 GymRat® All Rights Reserved
+  </Footer>	
 </main>

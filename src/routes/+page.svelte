@@ -1,7 +1,6 @@
 <script lang="ts">
   import App from '$lib/components/App.svelte';
-  import { Heading, Footer } from "flowbite-svelte";
-  import { fly } from 'svelte/transition';
+  import { Drawer } from "flowbite-svelte";
   import { selectionStore } from '../stores/stores';
 
   let isOpen = $state(false);
@@ -10,43 +9,34 @@
   $effect(() => { isOpen = $selectionStore != null; });
   $effect(() => { if (!isOpen) { isFullscreen = false; selectionStore.set(null); } });
 
-  function onBackdropClick() { isOpen = false; }
-  function onDrawerClick() { isFullscreen = !isFullscreen; }
+  function onHandleClick() { isFullscreen = !isFullscreen; }
 </script>
 
-<div class="col-span-12">
-  <Heading tag="h1" class="bg-white p-4" style="height:75px">GymRat</Heading>
+<div>
   <App />
-  <Footer class="p-4" style="height:50px">
-    2026 GymRat® All Rights Reserved
-  </Footer>
-</div>
 
-{#if isOpen}
-  <!-- Backdrop -->
-  <!-- <button
-    class="fixed inset-0 bg-black/30 border-none p-0 cursor-default"
-    style="z-index: 40;"
-    onclick={onBackdropClick}
-    aria-label="Lukk">
-  </button> -->
-
-  <!-- Drawer -->
-  <div
-    role="button"
-    tabindex="0"
-    transition:fly={{ y: 300, duration: 300 }}
-    class="fixed bottom-0 left-0 w-full bg-white rounded-t-xl shadow-lg"
-    style="z-index: 41; height: {isFullscreen ? '100vh' : 'auto'}; transition: height 0.3s ease;"
-    onclick={onDrawerClick}
-    onkeydown={(e) => e.key === 'Enter' && onDrawerClick()}
+  <Drawer
+    placement="bottom"
+    bind:open={isOpen}
+    modal={false}
+    width="full"
+    class="rounded-t-2xl p-0 shadow-2xl overflow-hidden"
+    style="top: auto; bottom: 50px; height: {isFullscreen ? 'calc(100dvh - 50px)' : '35vh'}; transition: height 0.42s cubic-bezier(0.32, 0.72, 0, 1); z-index: 41;"
   >
-    <div class="flex justify-center pt-2 pb-1">
-      <div class="w-10 h-1.5 rounded-full bg-gray-300"></div>
-    </div>
-    <p class="p-4">{$selectionStore}</p>
-  </div>
-{/if}
+    <button
+      class="w-full flex justify-center pt-3 pb-2 focus:outline-none cursor-grab active:cursor-grabbing"
+      onclick={onHandleClick}
+      aria-label={isFullscreen ? 'Minimer' : 'Utvid'}
+    >
+      <div class="w-12 h-1.5 rounded-full bg-gray-300"></div>
+    </button>
 
+    <div class="px-5 overflow-y-auto h-full">
+      <h2 class="text-xl font-bold text-gray-900">{$selectionStore}</h2>
+
+      <p class="text-gray-500 text-sm mt-2">Valgt muskelgruppe</p>
+    </div>
+  </Drawer>
+</div>
 <style>
 </style>
