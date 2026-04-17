@@ -25,22 +25,10 @@
 
         e.stopPropagation();
     }
-    
-    function pointerEnter(e:any) {
-        color = hoverColor;
-        e.stopPropagation();
-    }
-
-    function pointerLeave(e:any) {
-        color = bodyColor;
-        e.stopPropagation();
-    }
 </script>
 
   <T.Mesh geometry={mesh.geometry} name={mesh.name}
     renderOrder={1}
-    onpointerenter={pointerEnter}
-    onpointerleave={pointerLeave}
     onpointerup={pointerup}>
     
     <T.MeshStandardMaterial {normalMap} color={$selectionStore == mesh.name ? selectionColor : color}/>
