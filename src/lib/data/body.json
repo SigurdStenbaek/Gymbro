@@ -1,0 +1,191 @@
+{
+	"Body": [
+		{
+			"Jaw_Muscles": "Chewing gum"			
+		},
+		{
+			"Id": "Glutes",
+			"Title": "Glutes",
+			"Description": "The glutes are a muscle group consisting of three muscles, the well known gluteus maximus, which is the largest and strongest muscle in the human body, gluteus medius, and gluteus minimus. The muscles extend and abduct the legs, as well as making external rotation of the hip possible and providing support for the extended knee.",
+			"Excercises": [
+				"Exercises",
+				"Squats (all sorts)",
+					"Bulgarian split squats",
+					"Split squats"
+				]
+			
+		},
+		{
+			"Id": "Quads",
+			"Title": "Quads",
+			"Description": "The quads are the legs' version of the tricep. A very strong muscle group working to extend the knee, just like the tricep extends the arm, along with it's another task, which is to flex the hip up towards the body. The quads are located on the front og the high and consists of four muscles, hence the name quads, those are rectus femoris, vastus medialis, vastus lateralis, and vastus intermedius.",
+			"Excercises": [
+					"Exercises",
+					"Leg extensions",
+					"Reverse leg extensions",
+					"Leg press",
+					"Squats (all sorts)"
+				]
+			
+		},
+		{
+			"Id": "Lower_Leg_Muscles",
+			"Title": "Lower leg muscles",
+			"Description": "The lower leg muscles work in practically the same way as the forearm muscles, they are responsible for all foot movement like bringing the foot downwards towards the floor, rotating the foot, arching and inarching the foot and also bringing the foot upwards towards the ceiling. The muscles are obviously located in the legs, more precisely around the shins between the knee and the foot. The calfs are the largest lower leg muscles and consists of the three muscles Gastrocnemius, Soleus and Plantaris, the calfs extend the foot downwards lifting the heels up from the floor. On the front of the lower legs we find the shins, this is where the tibialis sits, along with a whole complex of muscles responsible for bringing the foot upwards towards the ceiling as well as other movements like aching the foot, rotating it, and moving the toes.",
+			"Excercises": [
+					"Exercises",
+					"Leg raises",
+					"Tibialis raises"
+				]
+
+		},
+		{
+			"Id": "Chest",
+			"Title": "Chest",
+			"Description": "The chest's task is to push the arms forward and away from the body. The chest is a very large and powerful muscle group consisting of three parts, the upper, the middle and the lower head. The parts ar naturally located in the same manner, the upper head is on the top and the lower head is onthe bottom, whilstthe middle head is smudged in between.",
+			"Excercises": [
+					"Exercises",
+					"Bench press",
+					"Dumbbell press",
+					"Incline bench press",
+					"Incline dumbbell press",
+					"Decline bench press",
+					"Decline dumbbell press",
+					"Pec deck",
+					"Dumbbell flies"
+				]
+
+		},
+		{
+			"Id": "Abs",
+			"Title": "Abs",
+			"Description": "The abs are part ofthe core muscle group, and are a chain of muscles responsible for pullingthe upper body towardsthe legs and vice versa, this plays a big part in stabilisingthe upper body and strengtheningthe core. The abs consists ofthe rectus abdominis which arethe infamous six pack.",
+			"Excercises": [
+					"Exercises",
+					"Russian twists",
+					"Cable crunches",
+					"Decline sit ups",
+					"Hanging leg raises"
+				]
+
+		},
+		{
+			"Id": "External_Oblique",
+			"Title": "External Oblique",
+			"Description": "The Oblique muscles are also part ofthe core, and their main function is to pullthe upper body sidewards towardsthe legs and vice versa, them obliques does a large part in stabilisingthe core as they are located onthe sides ofthe core preventingthe upper body from swaying from side to side, imagine them obliques asthe wires ona radio tower, dragging on each side to holdthe body upright.",
+			"Excercises": [
+					"Exercises",
+					"Russian twists"
+				]
+
+		},
+		{
+			"Id": "Shoulders_Deltoid",
+			"Title": "Shoulders",
+			"Description": "The shoulder is them second largest arm muscle and is responsible for movingtheshoulder joint, doing both push and pulling. The shoulder muscles are naturally located ontheshoulders and consists ofthree parts, them anterior head onthefront side, them lateral head inthemiddle or onthetop if you will, and finally, them posterior head onthefback side.",
+			"Excercises": [
+					"Exercises",
+					"Dumbbell shoulder press (sitting/standing)",
+					"Barbell shoulder/overhead press (sitting/standing)",
+					"Lateral raises (dumbell/cable)",
+					"Reverse flies (machine/dumbbell/cable)",
+					"Front raises (dumbbell/plate)",
+					"Six ways (sitting/standing)"
+				]
+		},
+		{
+			"Id": "Biceps_Brachii",
+			"Title": "Biceps",
+			"Description": "The biceps is them third largest arm muscle followed bythem shoulder deltiod andthem triceps. Its main task is to retract them arm, pullingthem hand towardsthem shoulders. The bicep is, as its name states, built up of two parts, them long andthem short head. The long head is located furthest out fromthem chest, whilstthem short head is located onthinside ofthem arm, closest tothem chest.",
+			"Excercises": [
+					"Exercises",
+					"Bar curls / dumbbell curls",
+					"Hammer curls (sitting/standing)"
+				]
+
+		},
+		{
+			"Id": "Forearms",
+			"Title": "Forearms",
+			"Description": "The forearms are a complex muscle group consisting of a whole list of heads. They allow for movement of the hands as well as the elbows, wrists and fingers. The forearm muscles are located between the elbow and the wrist.",
+			"Excercises": [
+					"Exercises",
+					"Barbell wrist curls",
+					"Dumbbell wrist curls",
+					"Barbell reverse wrist curls",
+					"Dumbbell reverse wrist curls",
+					"Hand gripper squeezes",
+					"Plate pinch",
+					"Barbell rolls",
+					"Barbell reverse-grip rolls",
+					"Without equipment",
+					"Forearm pushups"
+				]
+
+		},
+		{
+			"Id": "Traps",
+			"Title": "Traps",
+			"Description": "The trap is a star-shaped muscle that stretches from the lats and all the way up to the neck, as well as out to each shoulder. The trap muscle has a lot of responsibility; it tilts the head up and down, turns it from side to side, maintains your posture, moves the shoulders both backwards and upwards and twists the torso.",
+			"Excercises": [
+					"Exercises",
+					"Shrugs (barbell/dumbbell)",
+					"Face pulls (rope)",
+					"Upright rows (barbell/dumbbell)",
+					"Rack pulls/deadlift"
+				]
+
+		},
+		{
+			"Id": "Middle_back",
+			"Title": "Middle Back",
+			"Description": "The middle back is a muscle group consisting of three different muscles, the muscle group supports posture, stabilizes the spine and enables shoulder blade movement.",
+			"Excercises": [
+					"Exercises",
+					"Row - all sorts",
+					"Face pulls"
+				]
+
+		},
+		{
+			"Id": "Lats",
+			"Title": "Lats",
+			"Description": "The lats are the largest back muscles and are responsible for arm movement like pulling the arms down towards the sides of body, pulling them backwards, as well as rotating the arms inwards towards each other.",
+			"Excercises": [
+					"Exercises",
+					"Row (all sorts)",
+					"Pull-ups (all sorts)",
+					"Pull-downs (all sorts)",
+					"Dumbbell pullovers"
+				]
+
+		},
+		{
+			"Id": "Feet",
+			"Title": "Feet",
+			"Description": "The feet are responsible for balance and stability during movement and exercise.",
+			"Excercises": [
+					"Exercises",
+					"Balance exercises"
+				]
+		},
+		{
+			"Id": "Hands",
+			"Title": "Hands",
+			"Description": "The hands are responsible for grip strength and fine motor control.",
+			"Excercises": [
+					"Exercises",
+					"Grip exercises"
+				]
+		},
+		{
+			"Id": "Calfs",
+			"Title": "Calfs",
+			"Description": "The calf muscles are located in the lower leg and are responsible for pointing the toes and standing on the toes.",
+			"Excercises": [
+					"Exercises",
+					"Calf raises (standing/sitting)"
+				]
+		}
+	]
+}
