@@ -12,7 +12,7 @@
 <main>
   <Heading tag="h1" class="bg-white p-4" style="height:75px">GymRat®</Heading>
     {@render children()}
-  <Footer class="p-4" style="height:50px">
+  <Footer class="p-4" style="height:60px">
     2026 GymRat® All Rights Reserved
   </Footer>	
 </main>

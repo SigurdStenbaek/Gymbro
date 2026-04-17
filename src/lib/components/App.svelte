@@ -2,7 +2,7 @@
   import { Canvas } from '@threlte/core'
   import Scene from './Scene.svelte'
 </script>
-<div style="height:calc(100vh - 75px - 50px);" class="bg-gray-100">
+<div style="height:calc(100vh - 60px - 75px);" class="bg-gray-100">
     <Canvas>
       <Scene />
     </Canvas>

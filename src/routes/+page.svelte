@@ -2,6 +2,7 @@
   import App from '$lib/components/App.svelte';
   import { Drawer } from "flowbite-svelte";
   import { selectionStore } from '../stores/stores';
+  import { quintOut } from 'svelte/easing';
 
   let isOpen = $state(false);
   let isFullscreen = $state(false);
@@ -20,8 +21,9 @@
     bind:open={isOpen}
     modal={false}
     width="full"
-    class="rounded-t-2xl p-0 shadow-2xl overflow-hidden"
-    style="top: auto; bottom: 50px; height: {isFullscreen ? 'calc(100dvh - 50px)' : '35vh'}; transition: height 0.42s cubic-bezier(0.32, 0.72, 0, 1); z-index: 41;"
+    transitionParams={{ duration: 450, y: 400, easing: quintOut }}
+    class="rounded-t-2xl p-0 overflow-hidden"
+    style="top: auto; bottom: 50px; height: {isFullscreen ? 'calc(100dvh - 60px)' : '35vh'}; z-index: 41;"
   >
     <button
       class="w-full flex justify-center pt-3 pb-2 focus:outline-none cursor-grab active:cursor-grabbing"
