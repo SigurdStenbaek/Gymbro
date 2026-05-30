@@ -1,10 +1,8 @@
 import { Body, Part } from '$lib';
+import bodyData from '../../static/body.json';
 
-export async function load({ fetch }) {
-	const res = await fetch('/body.json');
-	const json = await res.json();
-
-	const parts = json.parts.map((p: { id: string; title: string; description: string; exercises: string[]; bodyweightExercises: string[] }) =>
+export async function load() {
+	const parts = bodyData.parts.map((p: { id: string; title: string; description: string; exercises: string[]; bodyweightExercises: string[] }) =>
 		new Part(p.id, p.title, p.description, p.exercises, p.bodyweightExercises)
 	);
 
