@@ -1,6 +1,11 @@
 # RDOK Changelog
 [Keep a changelog](https://keepachangelog.com/en/1.1.0/)
 
+## [0.0.4] - 2026-05-30
+- Dockerized app
+- Added helm package
+- Published to app.gymrat.no
+
 ## [0.0.3] - 2026-05-09
 - Display description texts in the drawer
 - Adjusted drag drop feel in the drawer
